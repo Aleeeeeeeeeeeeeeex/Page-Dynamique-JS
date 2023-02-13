@@ -3,7 +3,8 @@ console.log("heu");
 const reponse = await fetch("pieces-autos.json");
 const pieces = await reponse.json();
 
-const article = pieces[0];
+//pointer chaque element
+const article = pieces[1];
 const imageElement = document.createElement("img");
 imageElement.src = article.image;
 const nomElement = document.createElement("h2");
